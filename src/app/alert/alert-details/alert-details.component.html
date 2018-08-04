@@ -1,0 +1,61 @@
+<div class="alert-detail-container">
+            <div class="alert-detail">
+               <h4>Alert Details #{{alert.AlertId}}</h4>
+            </div>
+            <div class="row">
+               <div class="col-xs-12 col-md-5">
+                  <label>Alert ID</label>
+               </div>
+               <div class="col-xs-12 col-md-7">
+                  <label>{{alert.AlertId}}</label>
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-xs-12 col-md-5">
+                  <label>Alert Time</label>
+               </div>
+               <div class="col-xs-12 col-md-7">
+                  <label>{{alert.AlertTime}}</label>
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-xs-12 col-md-5">
+                  <label>Severity</label>
+               </div>
+               <div class="col-xs-12 col-md-7">
+                  <label [ngClass]="{'low': alert.Severity === 'Low' , 'medium': alert.Severity === 'Medium', 'high': alert.Severity === 'High' } ">{{alert.Severity}}</label>
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-xs-12 col-md-5">
+                  <label>Protocol</label>
+               </div>
+               <div class="col-xs-12 col-md-7">
+                  <label>{{alert.Protocol}}</label>
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-xs-12 col-md-5">
+                  <label>Client IP</label>
+               </div>
+               <div class="col-xs-12 col-md-7">
+                  <label>{{alert.ClientIP}}</label>
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-xs-12 col-md-5">
+                  <label>Server IP</label>
+               </div>
+               <div class="col-xs-12 col-md-7">
+                   <label>{{alert.ServerIP}}</label>
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-xs-12 col-md-5">
+                  <label>Client Country</label>
+               </div>
+               <div class="col-xs-12 col-md-7">
+                  <label>{{alert.ClientCountry}}</label>
+               </div>
+            </div>
+</div>

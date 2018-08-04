@@ -1,0 +1,8 @@
+
+	<td>{{alert.AlertId}}</td>
+	<td>{{alert.AlertTime}}</td>
+	<td [ngClass]="{'low': alert.Severity === 'Low' , 'medium': alert.Severity === 'Medium', 'high': alert.Severity === 'High' } ">{{alert.Severity}}</td>
+	<td>{{alert.ClientIP}}</td>
+	<td>{{alert.ServerIP}}</td>
+	<td>{{alert.Protocol}}</td>
+	<td>{{alert.ClientCountry}}</td>

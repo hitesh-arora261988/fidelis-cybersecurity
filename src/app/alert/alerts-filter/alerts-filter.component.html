@@ -1,0 +1,28 @@
+<div class="alert-filter-container">
+  <div class="alert-filter-header"> 
+  	<button class="btn btn-filter" (click)="showFilters()">Show Stats</button>
+  </div>
+  <div class="alert-filter-box" *ngIf="showFilter">
+  	<label class="filter-heading">Protocol</label>
+  	<div class="alert-filter-data">
+		<div class="row">
+		    <div class="col-md-6">
+		       <ul class="filter-list">
+		    	  <li *ngFor="let protocol of protocols">
+		    	  	<a class="filter-data" href="javascript:void(0)">{{protocol}}</a>
+		    	   </li>
+		    	</ul>	
+		    </div>
+		    <div class="col-md-6">
+		    	<ul class="filter-list">
+		    		<li *ngFor="let pcount of protocolCount">
+		    	         <label class="filter-value">{{pcount}}</label>		
+		    		</li>
+		    	</ul>
+		    	
+		    </div>	
+		</div>
+  	</div>
+  </div>	
+	
+</div>
